@@ -148,8 +148,13 @@ h1 {
 }
 /* секция post */
 .post { 
-    background-image: url(../images/heroi.jpg);
     background-color: var(--strong-color);
+    background-image: 
+        url(../images/heroi.jpg);
+    background-size: contain;
+    max-width: 1600px;
+    height: 600px;
+    
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -434,43 +439,7 @@ h1 {
 .post-work:nth-last-child(1n) {
     padding-bottom: 18px;
 }
-.container-vector {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.container-vector .vector:nth-last-child(-n+3) {
-    margin-left: 30px;
-    margin-bottom: 30px;
-}
-.vector {
-    height: 120px;
-    width: 270px;
-    background-color: var(--work-color);
-    border-radius: 4px;
-}
-.vector:nth-child(1) {
-    background-image: url(../images/icons.svg/Vector1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.vector:nth-child(2) {
-    background-image: url(../images/icons.svg/Vector2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.vector:nth-child(3) {
-    background-image: url(../images/icons.svg/Vector3.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.vector:nth-child(4) {
-    background-image: url(../images/icons.svg/Vector4.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
 .container-client {
     display: flex;
     flex-wrap: wrap;
@@ -518,7 +487,7 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
 }
-.cli:hover, .cli:focus {
+.container-client .cli:hover, .container-client .cli:focus {
     color: var(--pretty-color);
 }
 
