@@ -149,7 +149,9 @@ h1 {
 /* секция post */
 .post { 
     background-color: var(--strong-color);
-    background-image: 
+    background-image: linear-gradient( to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
         url(../images/heroi.jpg);
     background-size: contain;
     max-width: 1600px;
