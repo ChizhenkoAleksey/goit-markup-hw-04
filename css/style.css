@@ -513,16 +513,47 @@ margin-bottom: 30px;
     height: 12px;
 }
 
-.ikonka a{
+.ikonka {
     display: flex;
-    fill: var(--client-color);
-    height: 20px ;
-    width: 20px;
+    width: 206px;
+    padding: 0 auto;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+
+    
 }
-
-
-
-
+.ikonka a{
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    fill: var(--client-color);
+    
+}
+.ikonka .ddt {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    align-items: center;
+}
+.oka {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    
+    /*outline: 1px solid var(--client-color);*/
+    fill: var(--client-color);
+    text-align: center;
+    align-items: center;
+}
+.oka a:hover, .oka a:focus {
+    background-color: var(--pretty-color);
+    border-radius: 50%;
+    fill: var(--table-color);
+}
 
 
 
