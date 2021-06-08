@@ -110,24 +110,7 @@ h1 {
 {
     color: var(--pretty-color);
 }
-.auth-navlist .link-m::before,
-.auth-navlist .link-t::before {
-    content: '';
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin-right: 16px;
-    align-items: flex-end;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: var(--active-color);
-}
-.auth-navlist .link-m::before{
-    background-image: url(../images/icons.svg/envelope.svg);
-}
-.auth-navlist .link-t::before {
-    background-image: url(../images/icons.svg/smartphone.svg);
-}
+
 /*site-nav*/
 .site-navlist
 {
@@ -165,6 +148,18 @@ h1 {
 }
 .site-nav .link.current {
     color: var(--pretty-color);
+}
+.elope {
+    margin-right: 10px;
+}
+.elope:hover, .elope:focus {
+    fill: var(--pretty-color);
+}
+.auth-navlist a {
+    display: flex;
+    align-items: center;
+
+
 }
 /* секция post */
 .post { 
@@ -463,19 +458,20 @@ h1 {
     display: flex;
     padding: 0;
     margin: 0;
-    justify-content:space-between;
+    justify-content:center;
     text-align: center;
    
     
 }
 .client {
-    display: inline-block;
+    display: flex;
     width: 170px;
     height: 92px;
     padding: 0;
     outline: 1px solid var(--client-color);
     fill: var(--client-color);
-    
+    justify-content:center;
+    text-align: center;
 }
 .client:hover {
     fill: var(--pretty-color);
@@ -486,7 +482,9 @@ h1 {
 }
 
 .cli {
-    
+    display: flex;
+    justify-content:center;
+    text-align: center;
     width: 106px;
     height: 60px;
     
@@ -546,12 +544,18 @@ margin-bottom: 30px;
     
 }
 .ikonka a{
-    display: inline-flex;
+    display: flex;
     width: 44px;
     height: 44px;
     fill: var(--client-color);
+    align-items: center;
+    justify-content: center;
     
-    
+}
+.aria {
+    width: 20px;
+    height: 20px;
+
 }
 
 .oka {
@@ -587,7 +591,7 @@ margin-bottom: 30px;
 }
 
 .social a{
-    display: inline-flex;
+    display: flex;
     width: 44px;
     height: 44px;
     fill: var(--while-color);
@@ -595,6 +599,16 @@ margin-bottom: 30px;
     background-color: var(--active-color);
     
     
+}
+.social .con {
+    width: 20px;
+    height: 20px;
+    
+}
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .dess {
     color: var(--while-color);
