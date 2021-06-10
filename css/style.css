@@ -105,8 +105,6 @@ h1 {
 
 }
 .auth-navlist a:hover,.auth-navlist a:focus
-
-
 {
     color: var(--pretty-color);
 }
@@ -152,9 +150,7 @@ h1 {
 .elope {
     margin-right: 10px;
 }
-.elope:hover, .elope:focus {
-    fill: var(--pretty-color);
-}
+
 .auth-navlist a {
     display: flex;
     align-items: center;
@@ -168,7 +164,8 @@ h1 {
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
         url(../images/heroi.jpg);
-    background-size: contain;
+    
+    background-repeat: no-repeat;
     max-width: 1600px;
     height: 600px;
     
@@ -412,6 +409,7 @@ h1 {
     
 }
 .comunity .text {
+   
     margin-right: 30px;
     margin-bottom: 30px;
 }
@@ -441,6 +439,7 @@ h1 {
 
 }
 .container-portfolio {
+    display: block;
     border-left: 1px solid var(--table-color) ;
     border-right: 1px solid var(--table-color);
     border-bottom: 1px solid var(--table-color) ;
@@ -459,10 +458,11 @@ h1 {
     padding: 0;
     margin: 0;
     justify-content:center;
-    text-align: center;
+    
    
     
 }
+
 .client {
     display: flex;
     width: 170px;
@@ -472,13 +472,15 @@ h1 {
     fill: var(--client-color);
     justify-content:center;
     text-align: center;
+    align-items: center;
+    border-radius: 2px;
 }
-.client:hover {
+.client:hover, .client:focus {
     fill: var(--pretty-color);
     outline: 1px solid var(--pretty-color);
 }
-.container-client .client+.client {
-    margin-left: 30px;
+.container-client li:nth-last-child(1n) {
+    margin-right: 30px;
 }
 
 .cli {
@@ -498,6 +500,7 @@ background-color: var(--work-color);
 background-repeat: no-repeat;
 background-position: center;
 margin-bottom: 30px;
+border-radius: 2px;
 }
 
 .antenna::before {
@@ -517,10 +520,10 @@ margin-bottom: 30px;
 .lissen {
     box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
 }
-.text {
+.text a{
     cursor: pointer;
 }
-.text:hover {
+.text a:hover, .text a:focus{
     box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
 }
 .button-primary:hover, .button-primary:focus {
@@ -569,16 +572,17 @@ margin-bottom: 30px;
     text-align: center;
     align-items: center;
 }
-.oka a:hover, .oka a:focus {
+.ikonka a:hover, .ikonka a:focus {
     background-color: var(--pretty-color);
     border-radius: 50%;
     fill: var(--table-color);
 }
 
-.footer-list {
-    display: inline-flex;
-}
 
+.conteiner-footer {
+    display: flex;
+    align-items: baseline;
+}
 .social {
  display: flex;
  width: 206px;
@@ -596,8 +600,9 @@ margin-bottom: 30px;
     height: 44px;
     fill: var(--while-color);
     border-radius: 50%;
-    background-color: var(--active-color);
-    
+    background-color: rgba(0, 0, 0, 0.25);
+    align-items: center;
+    justify-content: center;
     
 }
 .social .con {
@@ -605,11 +610,7 @@ margin-bottom: 30px;
     height: 20px;
     
 }
-.social a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .dess {
     color: var(--while-color);
     font-family: Roboto;
@@ -618,15 +619,15 @@ margin-bottom: 30px;
     margin-bottom: 0;
     font-weight: 700;
 }
-.online {
-    margin-right: 70px;
-}
+
 .social a:hover, .social a:focus {
     background-color: var(--pretty-color);
     
 }
 
-
+.img {
+    display: block;
+}
 
 
 
